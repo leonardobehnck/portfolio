@@ -1,0 +1,64 @@
+.dark * {
+    transition: 1s;
+}
+
+.dark {
+    background-color: black;
+}
+
+.dark main {
+    background-color: rgba(50, 50, 50, 0.500);
+    color:#eee;
+    box-shadow: -5px -5px 25px rgb(255, 255, 255, 0.1);
+}
+
+.dark header {
+    background-color:rgb(50, 50, 50);
+    color: #eee;
+}
+
+.dark #portfolio li:hover {
+    background-color: rgb(40, 40, 40);	
+}
+
+.dark #portfolio h2 {
+    background-color: rgb(40, 40, 40);
+}
+
+.dark h1, .dark h2, .dark p {
+    color: #eee;
+}
+
+.dark header img {
+    filter: grayscale(50%);	
+}
+
+.dark hr {
+    background-color: rgba(153, 153, 153, 0.100);
+}
+
+.dark #footer {
+    background-color: rgb(25, 25, 25);
+    color: #eee;
+}
+
+.dark #footer li {
+    color: #eee;
+}
+
+.dark #tema {
+    background-color: black;
+    color: #eee;
+}
+
+.dark #tema:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.dark #footer a{
+    color: #eee;
+}
+.dark #footer li:hover {
+    background-color: rgb(40, 40, 40);	
+}

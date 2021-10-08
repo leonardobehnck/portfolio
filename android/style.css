@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+:root {
+    --cor0: #DAE4E7; /* CRIA A VARIAVEL PARA COR DE FUNDO */
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: var(--cor0); /* ATRIBUI A VARIAVEL A COR DE FUNDO */
+    font-family: sans-serif;
+}
+
+header {
+    max-height: 250px;
+    background-image: linear-gradient(to top, #9fbf40,#c9db94 );
+    padding: 100px 0px 10px 10px;
+    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
+}
+
+header > h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.035);
+}
+
+header  > p {
+    font-weight: bold;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    margin: 30px 0px 10px 0px;
+}
+
+nav > a {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+        background-color: white;
+}
+
+nav > a:visited {
+    color: black;
+}
+
+
+main {
+    max-width: 800px;
+    min-width: 280px;
+    background-color: #FBFEFB;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.250);
+}
+
+main > h1 {
+    font-family: Android, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: left;
+    color: #45503B;
+    padding: 10px;
+}
+
+main h2 {
+    font-family: Android, Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    text-align: left;
+    color: #45503B;
+    background-image: linear-gradient(to right, #FBFEFB, #9fbf40);
+    margin: 0px 0px 0px 10px;
+    padding: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main .mascote {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+}
+
+main > p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 30px; 
+    line-height: 1.8em;
+}
+
+main > p > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+main > p > a:visited {
+    color: black;
+}
+
+main > p > a::after {
+    content: "\01f517" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
+}
+
+#video {
+    max-width: 760px;
+    min-width: 280px;
+    margin: auto;
+    padding: 30px;
+    background-color: #9fbf40;
+    text-align: center;
+    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
+}
+
+.video-container  { 
+    position: relative; 
+    padding-bottom: 51.5%; 
+    padding-top: 30px; 
+}
+
+.video-container > iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#more {
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    padding: 10px;
+    background-color: #FBFEFB;
+    box-shadow: 5px 2px 15px rgba(0, 0, 0, 0.250);
+}
+
+#more > div {
+    background-color: #D6D7D6;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+#more h2 {
+    background-color: #B7C2AD;
+    border-radius: 15px 15px 0px 0px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+}
+
+#extras > ul {
+    font-weight: bold;
+    text-decoration: underline;
+    column-count: 2;
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: '\02714\00a0'; /*\00a0 da espaco no css */
+}
+
+#extras li {
+    padding: 2px;
+}
+
+#extras abbr {
+    text-decoration: none;
+}
+#extras > p {
+    padding: 10px;
+}
+
+#extras > p > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#extras > p > a:visited {
+    color: black;
+}
+
+#extras > p > a::after {
+    content: "\00a0\01f517" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
+}
+
+#end {
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    background-color: #FBFEFB;
+    border-radius: 0px 0px 15px 15px;
+    padding: 10px;
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.250);
+}
+
+#end > p {
+    padding: 10px;
+}
+
+footer {
+    background-color: #D6D7D6;
+    font-family: sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer a::after {
+    content: "\01f4f8" /* Para definir emoji no CSS substitui U+ do codepoint por \0 */
+}

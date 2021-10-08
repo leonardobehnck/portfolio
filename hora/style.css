@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(201, 201, 201);
+    font: normal 14px sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+
+}
+
+div#imagem, div#saudacao {
+    text-align: center;
+    margin: auto;
+    padding:10px;
+    margin: 10px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}

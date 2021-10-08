@@ -1,0 +1,187 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+body {
+    background-color: #eee;
+    font: lighter 1em 'Roboto Condensed';
+    padding: 50px 0;
+}
+
+#tema {
+    font: normal 18px 'Roboto Condensed';
+    border: none;
+    padding: 10px;
+    margin: 0 15px 0 0 ;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+#tema:hover {
+    background-color: black;
+    color: #eee;
+    transition: 1s;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: -5px -5px 25px rgba(0, 0, 0, 0.200);
+    display: flex;
+}
+
+header {
+    background-color: rgb(11,72,107);
+    min-width: 200px;
+    padding: 25px;
+    color: #eee;
+    border-radius: 25px 0 0 25px;
+}
+
+h1 {
+    font: lighter 3em 'Roboto Condensed';
+}
+
+header h2 {
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+header p, section p {
+    margin: 10px;
+    text-align: justify;
+}
+
+header a, header a:visited {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 7px;
+
+}
+
+header a:hover {
+    background-color: rgba(243, 243, 243, 0.2);
+    color: white;
+}
+
+.apresentacao {
+    margin: 25px;
+    text-align: justify;
+    text-indent: 25px;
+}
+
+header li {
+    width: 100%;
+    margin: 10px;
+    list-style: none;
+    vertical-align: middle;
+}
+
+header li img {
+    height: 20px;
+}
+
+.foto-perfil {
+    border-radius: 100px;
+    height: 200px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.100);
+}
+
+.foto-perfil:hover {
+    filter: grayscale(50%);	
+}
+
+section {
+    margin: 60px 0 0 0;
+}
+
+section h1 {
+    font: lighter 2.2em 'Roboto Condensed';
+    color: black;
+    margin: 15px;
+}
+
+section hr {
+    margin: 15px;
+    background-color: rgba(200, 200, 200, 0.250);
+    border-style: none;
+    height: 10px;
+    border-radius: 2px;
+}
+
+#portfolio {
+    list-style: none;
+    margin: 15px;
+}
+  
+#portfolio li{
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#portfolio li:hover {
+    background-color: #eee;	
+    transition: 1s;
+}
+
+#portfolio li img {
+    border-radius: 10px;
+    filter: grayscale(50%);
+    width: 100%;	
+}
+
+#portfolio h2 {
+    font: lighter 1.5em 'Roboto Condensed';
+    background-color: #eee;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+}
+
+section a, a:hover, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #ccc;
+    padding: 25px;
+    margin: 25telettpx 0 0 0;
+    text-align: center;
+    border-radius: 0 0 25px 0;
+    vertical-align: middle;
+}
+
+#footer img {
+    max-height: 25px;
+}
+
+#footer ul {
+    columns: 3;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+#footer ul li {
+    cursor: pointer;
+    height: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    vertical-align: middle;
+}
+
+#footer ul li:hover {
+    background-color: #eee;	
+    transition: 1s;
+}
